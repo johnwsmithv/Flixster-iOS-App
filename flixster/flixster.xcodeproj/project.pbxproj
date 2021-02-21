@@ -40,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		1B43EE1300488DD306631E4F /* Pods-flixster-flixsterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flixster-flixsterUITests.debug.xcconfig"; path = "Target Support Files/Pods-flixster-flixsterUITests/Pods-flixster-flixsterUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		54090B7825E2AA5E00A6E21F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		545294DD25DF50680083EB4D /* flixster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flixster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		545294E025DF50680083EB4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		545294E225DF50680083EB4D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +107,7 @@
 		545294D425DF50680083EB4D = {
 			isa = PBXGroup;
 			children = (
+				54090B7825E2AA5E00A6E21F /* README.md */,
 				545294DF25DF50680083EB4D /* flixster */,
 				545294F625DF506A0083EB4D /* flixsterTests */,
 				5452950125DF506A0083EB4D /* flixsterUITests */,
