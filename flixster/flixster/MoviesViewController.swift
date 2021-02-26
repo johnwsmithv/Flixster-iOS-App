@@ -43,7 +43,7 @@ class MoviesViewController: UIViewController, UITableViewDelegate, UITableViewDa
                 // TODO: Store the movies in a property to use elsewhere
                 // TODO: Reload your table view data
                 
-                print(dataDictionary)
+                //print(dataDictionary)
             
             
 
@@ -81,6 +81,22 @@ class MoviesViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return cell
     }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("Loading up the details screen\n")
+        
+        // Find the selected movie
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for: cell)!
+        let movie = movies[indexPath.row]
+        
+        // Pass the selected movie to the details view controller
+        let detailsViewController = segue.destination as! MovieDetailsViewController
+        detailsViewController.movie = movie
+        
+        // Unselecting the row so it still isn't selected
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        
+    }
 
 }
